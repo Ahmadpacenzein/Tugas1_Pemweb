@@ -12,169 +12,255 @@
     
 </head>
 <body>
-    <div class="container" >
+    <div class="container">
     </div>
     <div class="glass-layer">
         <h4>Halaman Profil</h4>
         <div class="signup"><p>About me</p></div>
-        <h5>Hi,Saya Ahmad Zaini</h5>
-        <p class="minat">Artificial Intelligent Engineer</p>
-        <p class="deskripsi">Saya adalah mahasiswa Teknik Informatika di Universitas Islam Riau. Kelas 3D, minat saya di bidang TI adalah Ai Engineer, tim saya Ahmad Zaini, freshly, Habib hibatul miqa'id</p>
-        <div class="sosmed">
-            <a href="https://www.instagram.com/freshly_13?igsh=N3FxbzB0bDNtZmNx"><i class="fa-brands fa-instagram" style="color: #4B4B4B;" ></i></a>
-            <a href="https://www.facebook.com/share/GgY1XGrTVy5fLZpb/"><i class="fa-brands fa-facebook" style="color: #4B4B4B;"></i></a>
-            <a href="https://www.tiktok.com/@axley1pace?_t=8qfN5pkWebn&_r=1"><i class="fa-brands fa-tiktok" style="color: #4B4B4B;"></i></a>
-            <a href="https://www.linkedin.com/in/ahmad-zaini-19369428b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin" style="color :#4B4B4B;"></i>  </a>
+        <div class="content-wrapper">
+            <div class="text-content">
+                <h5>Hi,Saya Ahmad Zaini</h5>
+                <p class="minat">Artificial Intelligent Engineer</p>
+                <p class="deskripsi">Saya adalah mahasiswa Teknik Informatika di Universitas Islam Riau. Kelas 3D, minat saya di bidang TI adalah Ai Engineer, tim saya Ahmad Zaini, freshly, Habib hibatul miqa'id</p>
+                <div class="sosmed">
+                    <a href="https://www.instagram.com/freshly_13?igsh=N3FxbzB0bDNtZmNx"><i class="fa-brands fa-instagram" style="color: #4B4B4B;"></i></a>
+                    <a href="https://www.facebook.com/share/GgY1XGrTVy5fLZpb/"><i class="fa-brands fa-facebook" style="color: #4B4B4B;"></i></a>
+                    <a href="https://www.tiktok.com/@axley1pace?_t=8qfN5pkWebn&_r=1"><i class="fa-brands fa-tiktok" style="color: #4B4B4B;"></i></a>
+                    <a href="https://www.linkedin.com/in/ahmad-zaini-19369428b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin" style="color: #4B4B4B;"></i></a>
+                </div>
+                <div class="hubungi">Hire Me</div>
+            </div>
+            <div class="pp">
+                <img src="gambar/foto profil.png" alt="Profile Picture">
+            </div>
         </div>
-        <div class="pp"><img src="gambar/foto profil.png"></div>
-        <div class="hubungi">Hire Me</div>
     </div>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-    
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-  
-}
-.container{
-    width: 100%;
-    height: 100vh;
-    filter: blur();
-    background-image: linear-gradient(to right top, #106efb, #00a4ff, #00c8e7, #00e087, #a8eb12);
-}
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+        }
 
-.glass-layer {
-    position: absolute;
-    aspect-ratio: 16/10;
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.185), rgba(255, 255, 255, 0.352));
-    backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    border-radius: 20px;
-    border:1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-}
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            background-image: linear-gradient(to right top, #106efb, #00a4ff, #00c8e7, #00e087, #a8eb12);
+            position: fixed;
+            z-index: -1;
+        }
 
-.signup{
-    height: 40px;
-    width: 120px;
-    position: relative;
-    background-color: azure;
-    padding:0 ;
-    margin-top: -75px;
-    margin-left: 90%;
-    border-radius: 30px;
-    
-}
-.signup p{
-    color: #4b4b4b;
-    padding: 8px;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items:normal;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    
-}
-h4{
-    display: flex;
-    
-    height: 20px;
-    position: relative;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    padding-left: 6%;
-    font-size: 40px;
-    margin-top: 60px;
-    padding-bottom: 10px;
-    color: #ffffff;
-}
+        .glass-layer {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.185), rgba(255, 255, 255, 0.352));
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            padding: 30px;
+            position: relative;
+        }
 
-h5{
-    padding-top: 15%;
-    padding-left: 5%;
-    margin: 0;
-    font-size: 50px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    color: #ffffff;
-}
+        .content-wrapper {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+        }
 
-p.minat{
-    font-family: "Poppins", sans-serif;
-    color: #4B4B4B;
-    font-weight: 800;
-    font-size: 20px;
-    padding-left: 6%;
-    margin: -10px;
-}
+        .text-content {
+            flex: 1;
+        }
 
-p.deskripsi{
-    padding-left: 5%;
-    padding-right: 50%;
-    font-family: "Poppins", sans-serif;
-    color: #fcfcfcfc;
-    font-size: 18px;
-}
+        .signup {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: azure;
+            padding: 8px 20px;
+            border-radius: 30px;
+        }
 
+        .signup p {
+            color: #4b4b4b;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            text-align: center;
+        }
 
-.sosmed{
-    padding-left: 4.5%;
-}
+        h4 {
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            font-size: 2.5rem;
+            color: #ffffff;
+            margin-bottom: 30px;
+        }
 
-.sosmed i{
-    font-size: 30px;
-    padding: 10px;
-    outline: 3px solid #4b4b4b;
-    border-radius: 50%;
-    margin: 10px;
-}
+        h5 {
+            font-size: 2.5rem;
+            font-family: "Poppins", sans-serif;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
 
-.hubungi{
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    letter-spacing: 1px;
-    color: #ffffff;
-    width: 100px;
-    height: 30px;
-    background-color: #a6eb1200;
-    outline: 2px solid #ffff;
-    border-radius: 10px;
-    margin-left: 5%;
-    margin-top: 10px;
-    text-align: center;
-    align-items: center;
-    padding-top: 7px;
-    text-decoration: none;
-}
+        .minat {
+            font-family: "Poppins", sans-serif;
+            color: #4B4B4B;
+            font-weight: 800;
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+        }
 
+        .deskripsi {
+            font-family: "Poppins", sans-serif;
+            color: #fcfcfc;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            max-width: 600px;
+        }
 
-.hubungi:hover{
-    background-color: #ffffff3c;
-    color: #4b4b4b;
-    text-decoration: none;
-    
+        .sosmed {
+            margin-bottom: 20px;
+        }
 
-}
+        .sosmed i {
+            font-size: 1.5rem;
+            padding: 10px;
+            outline: 3px solid #4b4b4b;
+            border-radius: 50%;
+            margin-right: 15px;
+            transition: all 0.3s ease;
+        }
 
-.pp img{
-    z-index: 200  ;
-    position: fixed;
-    width: 400px;
-    height: 400px;
-    margin-left: 60%;
-    align-content: center;
-    margin-top: -25%;
-    
-}
+        .sosmed i:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transform: scale(1.1);
+        }
+
+        .hubungi {
+            font-family: "Poppins", sans-serif;
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: #ffffff;
+            padding: 10px 20px;
+            background-color: transparent;
+            outline: 2px solid #ffff;
+            border-radius: 10px;
+            display: inline-block;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .hubungi:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: #4b4b4b;
+        }
+
+        .pp img {
+            max-width: 400px;
+            width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 1024px) {
+            .glass-layer {
+                width: 95%;
+                padding: 20px;
+            }
+
+            h4 {
+                font-size: 2rem;
+            }
+
+            h5 {
+                font-size: 2rem;
+            }
+
+            .pp img {
+                max-width: 300px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .content-wrapper {
+                flex-direction: column-reverse;
+                text-align: center;
+            }
+
+            .text-content {
+                width: 100%;
+            }
+
+            .deskripsi {
+                max-width: 100%;
+            }
+
+            .sosmed {
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+            }
+
+            .sosmed i {
+                margin: 0;
+            }
+
+            .pp img {
+                max-width: 250px;
+                margin-bottom: 20px;
+            }
+
+            .signup {
+                position: relative;
+                top: 0;
+                right: 0;
+                margin: 0 auto 20px;
+                width: fit-content;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            h4 {
+                font-size: 1.5rem;
+            }
+
+            h5 {
+                font-size: 1.5rem;
+            }
+
+            .minat {
+                font-size: 1rem;
+            }
+
+            .deskripsi {
+                font-size: 0.9rem;
+            }
+
+            .pp img {
+                max-width: 200px;
+            }
+
+            .sosmed i {
+                font-size: 1.2rem;
+                padding: 8px;
+            }
+        }
     </style>
-
 </body>
 </html>
-
